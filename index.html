@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thông Tin Cá Nhân</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:url("https://images.unsplash.com/photo-1549692520-acc6669e2f0c?q=80&w=1920&auto=format&fit=crop") center/cover no-repeat fixed;
+}
+
+.overlay{
+    width:100%;
+    min-height:100vh;
+    background:rgba(0,0,0,.35);
+    padding:40px 20px;
+}
+
+h1{
+    width:fit-content;
+    margin:auto;
+    background:rgba(255,255,255,.85);
+    color:red;
+    padding:15px 40px;
+    border-radius:15px;
+    font-size:45px;
+}
+
+.container{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:330px;
+    background:rgba(255,255,255,.25);
+    backdrop-filter:blur(12px);
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    border-radius:15px;
+}
+
+.avatar{
+    width:230px !important;
+    height:230px;
+    object-fit:cover;
+    border-radius:50% !important;
+    border:6px solid white;
+}
+
+.title{
+    font-size:35px;
+    font-weight:bold;
+    margin-top:15px;
+}
+
+.fb{
+    color:#1877F2;
+}
+
+.tt{
+    color:#000;
+}
+
+.zl{
+    color:#0068ff;
+}
+
+a{
+    text-decoration:none;
+}
+
+.footer{
+    margin-top:10px;
+    color:#555;
+}
+
+@media(max-width:900px){
+
+.card{
+width:90%;
+}
+
+h1{
+font-size:30px;
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="overlay">
+
+<h1>Thông Tin Cá Nhân</h1>
+
+<div class="container">
+
+<!-- FACEBOOK -->
+<div class="card">
+
+<a href="https://www.facebook.com/ducanh17.qt12/?locale=vi_VN" target="_blank">
+
+<img class="avatar"
+src="https://i.imgur.com/YOUR_FACEBOOK_AVATAR.jpg">
+
+<div class="title fb">
+Facebook
+</div>
+
+<div class="footer">
+Nhấn để xem trang cá nhân
+</div>
+
+</a>
+
+</div>
+
+<!-- TIKTOK -->
+<div class="card">
+
+<a href="https://www.tiktok.com/@htda.qt.12="_blank">
+
+<img class="avatar"
+src="https://i.imgur.com/YOUR_TIKTOK_AVATAR.jpg">
+
+<div class="title tt">
+TikTok
+</div>
+
+<div class="footer">
+Nhấn để xem TikTok
+</div>
+
+</a>
+
+</div>
+
+<!-- ZALO -->
+<div class="card">
+
+<a href="https://zalo.me/0856759246" target="_blank">
+
+<img
+src="https://i.imgur.com/YOUR_ZALO_QR.png">
+
+<div class="title zl">
+Zalo
+</div>
+
+<div class="footer">
+Quét QR hoặc bấm để mở Zalo
+</div>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
